@@ -3,7 +3,7 @@
 
 
 ## Plot code - 
-plt.figure(figsize=(12, 4.5)) 
+plt.figure(figsize=(12, 4.5))
 
 df['Date'] = pd.to_datetime(df['Date'])  
 
