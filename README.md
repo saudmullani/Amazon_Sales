@@ -1,11 +1,8 @@
-
-# 📈 1) Plot - Total Sales Over Date 
-
-
+ 📈 PLOTS
+#  1) Plot - Total Sales Over Date 
 
 
-
-## Plot code - Total Sales Over Date
+## Plot code - 
 plt.figure(figsize=(12, 4.5))  # Width aur height adjust kiya gaya hai
 plt.plot(df['Date'], df['Total_Sales'], color='green', linewidth=2)
 plt.title('Total Sales Over Time', fontsize=14)
