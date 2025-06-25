@@ -46,7 +46,7 @@ plt.show()
 
 
 
-#  2) Plot -Top 10 Categories by Number of Orders
+#   2) Plot -Top 10 Categories by Number of Orders
 
 ## Plot code - 
 
