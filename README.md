@@ -90,7 +90,7 @@ plt.show()
 
 ## Plot code - 
 
-category_counts = df['Category'].value_counts().head(5)      #Get top 5 categories
+category_counts = df['Category'].value_counts().head(5)       #Get top 5 categories
 
 
 plt.figure(figsize=(6.3, 8))
@@ -99,7 +99,8 @@ plt.figure(figsize=(6.3, 8))
 explode = [0,0,0,0,0] * len(category_counts)
 
 
-##Create the pie chart (without explode)
+
+##   -Create the pie chart without explode
 
 
 wedges, texts, autotexts = plt.pie(category_counts,
