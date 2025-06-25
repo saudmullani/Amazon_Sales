@@ -90,7 +90,7 @@ plt.show()
 
 ## Plot code - 
 
-category_counts = df['Category'].value_counts().head(5)       #Get top 5 categories
+category_counts = df['Category'].value_counts().head(5)    -   #Get top 5 categories
 
 
 plt.figure(figsize=(6.3, 8))
@@ -100,7 +100,7 @@ explode = [0,0,0,0,0] * len(category_counts)
 
 
 
-##-Create the pie chart without explode
+## - Create the pie chart without explode
 
 
 wedges, texts, autotexts = plt.pie(category_counts,
@@ -116,13 +116,13 @@ wedges, texts, autotexts = plt.pie(category_counts,
 plt.legend(wedges, category_counts.index,
           title="Categories",
           loc="center left",
-          bbox_to_anchor=(1, 0, 0.5, 1))          #Adjusted bbox_to_anchor
+          bbox_to_anchor=(1, 0, 0.5, 1))        -   #Adjusted bbox_to_anchor
           
 
-plt.title('Pie Chart of Top 5 Category Distribution', fontsize=14)        #Updated title
+plt.title('Pie Chart of Top 5 Category Distribution', fontsize=14)      -   #Updated title
 
 
-plt.tight_layout()  #Adjust layout to prevent labels from being cut off
+plt.tight_layout()  -  #Adjust layout to prevent labels from being cut off
 
 
 plt.show()
@@ -153,7 +153,7 @@ plt.figure(figsize=(14, 6))
 ax = sns.barplot(x=top_10_states.values, y=top_10_states.index) - #Switch x and y back
 
 
-plt.xlabel('Number of Orders')  #Switch labels back
+plt.xlabel('Number of Orders') - #Switch labels back
 plt.ylabel('Ship State')
 
 
@@ -193,7 +193,7 @@ qty_by_size = df.groupby('Size')['Qty'].sum().reset_index()
 plt.figure(figsize=(11, 6))
 
 
-ax = sns.barplot(x='Size', y='Qty', data=qty_by_size)  #Use barplot for vertical bars
+ax = sns.barplot(x='Size', y='Qty', data=qty_by_size)  - #Use barplot for vertical bars
 
 plt.xlabel('Size')
 
@@ -206,7 +206,7 @@ plt.title('Quantity by Size')
 plt.xticks(rotation=45, ha='right')
 
 
-#Add labels on top of bars
+##-Add labels on top of bars
 for p in ax.patches:
     ax.annotate(f'{p.get_height():.0f}', (p.get_x() + p.get_width() / 2., p.get_height()),
                 ha='center', va='center', fontsize=10, color='black', xytext=(0, 5),
@@ -242,7 +242,7 @@ plt.title('Distribution of Courier Status')
 
 plt.xticks(rotation=45, ha='right')
 
-#Add labels on top of bars
+##-Add labels on top of bars
 for p in ax.patches:
     ax.annotate(f'{p.get_height():.0f}', (p.get_x() + p.get_width() / 2., p.get_height()),
                 ha='center', va='center', fontsize=10, color='black', xytext=(0, 5),
