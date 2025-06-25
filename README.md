@@ -42,7 +42,7 @@ plt.show()
 ![Total sales over date](https://github.com/user-attachments/assets/6c77ed9a-0b14-4f98-9e83-dee19fac01c6)
 
 
-## plot link 🔗 
+## plot link 🔗 ![Total Sales Over Date]((https://github.com/user-attachments/assets/dc8117d6-bc97-4682-971d-64df9c268841)
 ![Total Sales Over Date]((https://github.com/user-attachments/assets/dc8117d6-bc97-4682-971d-64df9c268841)
 
 
