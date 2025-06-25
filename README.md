@@ -207,6 +207,9 @@ plt.xticks(rotation=45, ha='right')
 
 
 ##- Add labels on top of bars
+
+
+
 for p in ax.patches:
     ax.annotate(f'{p.get_height():.0f}', (p.get_x() + p.get_width() / 2., p.get_height()),
                 ha='center', va='center', fontsize=10, color='black', xytext=(0, 5),
