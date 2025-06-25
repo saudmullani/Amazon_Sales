@@ -46,7 +46,7 @@ plt.show()
 
 
 
-#   2) Plot -Top 10 Categories by Number of Orders
+#   2) Plot - Top 10 Categories by Number of Orders
 
 ## Plot code - 
 
@@ -86,7 +86,7 @@ plt.show()
 
 
 
-# 3) Pie Chart of Top 5 Category Distribution
+# 3) Plot - Pie Chart of Top 5 Category Distribution
 
 ## Plot code - 
 
@@ -118,10 +118,10 @@ plt.legend(wedges, category_counts.index,
           bbox_to_anchor=(1, 0, 0.5, 1))  ##Adjusted bbox_to_anchor
           
 
-plt.title('Pie Chart of Top 5 Category Distribution', fontsize=14)  ## Updated title
+plt.title('Pie Chart of Top 5 Category Distribution', fontsize=14)  ##Updated title
 
 
-plt.tight_layout()  ## Adjust layout to prevent labels from being cut off
+plt.tight_layout()  #Adjust layout to prevent labels from being cut off
 
 
 plt.show()
@@ -132,7 +132,7 @@ plt.show()
 
 
 
-# 4)Plot - Top 10 Ship States
+# 4) Plot - Top 10 Ship States
 
 ## Plot code - 
 
@@ -158,11 +158,11 @@ plt.ylabel('Ship State')
 
 plt.title('Top 10 Ship States')
 
-plt.xticks(rotation=0, ha='center')  #Adjust x-tick rotation (optional)
+plt.xticks(rotation=0, ha='center')     #Adjust x-tick rotation (optional)
 
 
 
-plt.yticks(rotation=0, ha='right')  #Adjust y-tick rotation
+plt.yticks(rotation=0, ha='right')    #Adjust y-tick rotation
 
 
 #Add quantity labels on top of bars 
@@ -182,7 +182,7 @@ plt.show()
 
 
 
-# 5)plot - Quantity by Size
+# 5) plot - Quantity by Size
 
 ## Plot code - 
 
