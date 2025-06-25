@@ -130,3 +130,55 @@ plt.show()
 
 ## plot link 🔗(https://github.com/user-attachments/assets/08f64692-b33c-4106-97ec-d6dd5f18bd50)
 
+
+
+# 4) Top 10 Ship States
+
+## Plot code - 
+
+import matplotlib.pyplot as plt
+
+
+import seaborn as sns
+
+
+top_10_states = df['ship-state'].value_counts().head(10)
+
+
+
+plt.figure(figsize=(14, 6))
+
+
+ax = sns.barplot(x=top_10_states.values, y=top_10_states.index)  #Switch x and y back
+
+
+plt.xlabel('Number of Orders')  #Switch labels back
+plt.ylabel('Ship State')
+
+
+plt.title('Top 10 Ship States')
+
+plt.xticks(rotation=0, ha='center')  #Adjust x-tick rotation (optional)
+
+
+
+plt.yticks(rotation=0, ha='right')  #Adjust y-tick rotation
+
+
+#Add quantity labels on top of bars (adjust position for horizontal bars)
+
+
+for p in ax.patches:
+    ax.annotate(f'{p.get_width():.0f}', (p.get_width(), p.get_y() + p.get_height() / 2.),
+                ha='left', va='center', fontsize=10, color='black', xytext=(5, 0),
+                textcoords='offset points')
+
+plt.show()
+
+
+![Top 10 Ship States](https://github.com/user-attachments/assets/b9144b82-00f1-4bee-b0d1-15abe1b38ecf)
+
+
+## plot link 🔗(https://github.com/user-attachments/assets/bd7a394d-aca8-454b-8e05-f8ae7cb8a5af)
+
+
