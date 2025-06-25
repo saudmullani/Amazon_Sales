@@ -86,7 +86,7 @@ plt.show()
 
 
 
-# 3)
+# 3) Pie Chart of Top 5 Category Distribution
 
 ## Plot code - 
 
@@ -99,7 +99,7 @@ plt.figure(figsize=(6.3, 8))
 explode = [0,0,0,0,0] * len(category_counts)
 
 
-## Create the pie chart (without explode)
+##Create the pie chart (without explode)
 
 
 wedges, texts, autotexts = plt.pie(category_counts,
