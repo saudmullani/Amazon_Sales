@@ -103,7 +103,7 @@ explode = [0,0,0,0,0] * len(category_counts)
 
 
 wedges, texts, autotexts = plt.pie(category_counts,
-                                  autopct='%1.1f%%',  # Format percentages
+                                  autopct='%1.1f%%', 
                                   startangle=90,
                                   textprops={'fontsize': 13, 'color': 'black'},
                                   pctdistance=1.1) 
