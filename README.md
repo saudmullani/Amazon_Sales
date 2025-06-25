@@ -67,4 +67,5 @@ for p in ax.patches:
 
 plt.show()
 
-![Distribution of Courier Status](https://github.com/user-attachments/assets/ee05677a-ad38-4ad9-900e-21e3171053de)
+![Top 10 Categories by Number of Orders](https://github.com/user-attachments/assets/d17496d7-a24d-4fdc-b14c-bdab3f7b0519)
+
