@@ -42,8 +42,7 @@ plt.show()
 ![Total sales over date](https://github.com/user-attachments/assets/6c77ed9a-0b14-4f98-9e83-dee19fac01c6)
 
 
-## plot link 🔗 
-## ((https://github.com/user-attachments/assets/dc8117d6-bc97-4682-971d-64df9c268841)
+## plot link 🔗 ((https://github.com/user-attachments/assets/dc8117d6-bc97-4682-971d-64df9c268841)
 
 
 
@@ -69,3 +68,4 @@ plt.show()
 
 ![Top 10 Categories by Number of Orders](https://github.com/user-attachments/assets/d17496d7-a24d-4fdc-b14c-bdab3f7b0519)
 
+## plot link 🔗 (https://github.com/user-attachments/assets/d17496d7-a24d-4fdc-b14c-bdab3f7b0519)
