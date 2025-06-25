@@ -15,6 +15,12 @@ df['Month'] = df['Date'].dt.month
 
 
 df['Day'] = df['Date'].dt.day    
+
+
+
+
+
+
 sns.lineplot(x='Date', y='total sales', data=df)
 
 
