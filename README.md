@@ -90,7 +90,7 @@ plt.show()
 
 ## Plot code - 
 
-category_counts = df['Category'].value_counts().head(5)  # Get top 5 categories
+category_counts = df['Category'].value_counts().head(5)      #Get top 5 categories
 
 
 plt.figure(figsize=(6.3, 8))
@@ -115,10 +115,10 @@ wedges, texts, autotexts = plt.pie(category_counts,
 plt.legend(wedges, category_counts.index,
           title="Categories",
           loc="center left",
-          bbox_to_anchor=(1, 0, 0.5, 1))  ##Adjusted bbox_to_anchor
+          bbox_to_anchor=(1, 0, 0.5, 1))          #Adjusted bbox_to_anchor
           
 
-plt.title('Pie Chart of Top 5 Category Distribution', fontsize=14)  ##Updated title
+plt.title('Pie Chart of Top 5 Category Distribution', fontsize=14)        #Updated title
 
 
 plt.tight_layout()  #Adjust layout to prevent labels from being cut off
@@ -149,7 +149,7 @@ top_10_states = df['ship-state'].value_counts().head(10)
 plt.figure(figsize=(14, 6))
 
 
-ax = sns.barplot(x=top_10_states.values, y=top_10_states.index)  #Switch x and y back
+ax = sns.barplot(x=top_10_states.values, y=top_10_states.index) - #Switch x and y back
 
 
 plt.xlabel('Number of Orders')  #Switch labels back
@@ -158,11 +158,11 @@ plt.ylabel('Ship State')
 
 plt.title('Top 10 Ship States')
 
-plt.xticks(rotation=0, ha='center')     #Adjust x-tick rotation (optional)
+plt.xticks(rotation=0, ha='center')       -  #Adjust x-tick rotation (optional)
 
 
 
-plt.yticks(rotation=0, ha='right')    #Adjust y-tick rotation
+plt.yticks(rotation=0, ha='right')          -   #Adjust y-tick rotation
 
 
 #Add quantity labels on top of bars 
