@@ -100,7 +100,7 @@ explode = [0,0,0,0,0] * len(category_counts)
 
 
 
-## - Create the pie chart without explode
+##-   Create the pie chart without explode
 
 
 wedges, texts, autotexts = plt.pie(category_counts,
