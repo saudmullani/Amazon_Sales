@@ -64,3 +64,4 @@ for p in ax.patches:
 
 plt.show()
 
+![Distribution of Courier Status](https://github.com/user-attachments/assets/ee05677a-ad38-4ad9-900e-21e3171053de)
