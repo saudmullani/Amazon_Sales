@@ -166,7 +166,7 @@ plt.xticks(rotation=0, ha='center')       -  #Adjust x-tick rotation (optional)
 plt.yticks(rotation=0, ha='right')          -   #Adjust y-tick rotation
 
 
-#Add quantity labels on top of bars 
+##- Add quantity labels on top of bars 
 
 for p in ax.patches:
     ax.annotate(f'{p.get_width():.0f}', (p.get_width(), p.get_y() + p.get_height() / 2.),
@@ -206,7 +206,7 @@ plt.title('Quantity by Size')
 plt.xticks(rotation=45, ha='right')
 
 
-##-Add labels on top of bars
+##- Add labels on top of bars
 for p in ax.patches:
     ax.annotate(f'{p.get_height():.0f}', (p.get_x() + p.get_width() / 2., p.get_height()),
                 ha='center', va='center', fontsize=10, color='black', xytext=(0, 5),
