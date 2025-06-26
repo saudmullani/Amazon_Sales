@@ -1,4 +1,4 @@
-#  1) Plot - Total Sales Over Date 
+# 1) Plot - Total Sales Over Date 
 
 
 ## Plot code - 
