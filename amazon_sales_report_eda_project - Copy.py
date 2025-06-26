@@ -94,25 +94,23 @@ plt.title(' total sales over date')
 plt.xticks(rotation=45, ha='right')
 plt.show()
 
-plt.figure(figsize=(10, 6))
-ax = sns.barplot(x='Category', y='Qty', data=df)
+top_10_categories = df['Category'].value_counts().head(10)
 
+plt.figure(figsize=(12, 5))
+ax = sns.barplot(x=top_10_categories.index, y=top_10_categories.values)
 plt.xlabel('Category')
-plt.ylabel('Quantity')
-plt.title('Bar Chart of Quantity by Category')
+plt.ylabel('Number of Orders')
+plt.title('Top 10 Categories by Number of Orders')
 plt.xticks(rotation=45, ha='right')
 
-# Get the current y-axis tick locations and labels
-yticks = ax.get_yticks()
-yticklabels = ax.get_yticklabels()
+# Add number labels on top of bars
+for p in ax.patches:
+    ax.annotate(f'{p.get_height():.0f}', (p.get_x() + p.get_width() / 2., p.get_height()),
+                ha='center', va='center', fontsize=10, color='black', xytext=(0, 5),
+                textcoords='offset points')
 
-# Create new y-axis tick labels starting from 1
-new_yticklabels = [str(i + 1) for i in range(len(yticks))]
+plt.show()
 
-# Set the new y-axis tick labels
-ax.set_yticklabels(new_yticklabels)
-
-# Add quantity labels on top
 
 category_counts = df['Category'].value_counts().head(5)  # Get top 5 categories
 plt.figure(figsize=(6.3, 8))
@@ -136,12 +134,11 @@ plt.title('Pie Chart of Top 5 Category Distribution', fontsize=14)  # Updated ti
 plt.tight_layout()  # Adjust layout to prevent labels from being cut off
 plt.show()
 
-import matplotlib.pyplot as plt
 import seaborn as sns
 
 top_10_states = df['ship-state'].value_counts().head(10)
 
-plt.figure(figsize=(12, 6))
+plt.figure(figsize=(14, 6))
 ax = sns.barplot(x=top_10_states.values, y=top_10_states.index)  # Switch x and y back
 plt.xlabel('Number of Orders')  # Switch labels back
 plt.ylabel('Ship State')
@@ -156,7 +153,6 @@ for p in ax.patches:
                 textcoords='offset points')
 
 plt.show()
-
 qty_by_size = df.groupby('Size')['Qty'].sum().reset_index()
 
 plt.figure(figsize=(10, 6))
@@ -175,12 +171,40 @@ for p in ax.patches:
 
 plt.show()
 
-plt.figure(figsize=(10, 6))
-sns.lineplot(x='Qty', y='Amount', data=df)  # Change to sns.lineplot
-plt.xlabel('Quantity')
-plt.ylabel('Amount')
-plt.title('Relationship Between Quantity and Amount')
+qty_by_size = df.groupby('Size')['Qty'].sum().reset_index()
+
+plt.figure(figsize=(11, 6))
+ax = sns.barplot(x='Size', y='Qty', data=qty_by_size)  # Use barplot for vertical bars
+
+plt.xlabel('Size')
+plt.ylabel('Total Quantity')
+plt.title('Quantity by Size')
+plt.xticks(rotation=45, ha='right')
+
+# Add labels on top of bars
+for p in ax.patches:
+    ax.annotate(f'{p.get_height():.0f}', (p.get_x() + p.get_width() / 2., p.get_height()),
+                ha='center', va='center', fontsize=10, color='black', xytext=(0, 5),
+                textcoords='offset points')
+
+plt.show() 
+
+
+plt.figure(figsize=(8, 6))
+ax = sns.countplot(x='Courier Status', data=df)
+plt.xlabel('Courier Status')
+plt.ylabel('Number of Orders')
+plt.title('Distribution of Courier Status')
+plt.xticks(rotation=45, ha='right')
+
+# Add labels on top of bars
+for p in ax.patches:
+    ax.annotate(f'{p.get_height():.0f}', (p.get_x() + p.get_width() / 2., p.get_height()),
+                ha='center', va='center', fontsize=10, color='black', xytext=(0, 5),
+                textcoords='offset points')
+
 plt.show()
+
 
 """# conclusion of all chart  ;
 
